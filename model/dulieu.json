@@ -1,0 +1,68 @@
+{
+    "sanpham":[
+        {
+            "id":1,
+            "title": "Đắc Nhân Tâm",
+            "bigImg":"./images/sp1/1.jpg",
+            "productImg":["./images/sp1/2.jpg","./images/sp1/3.jpg"],
+            "desc":"Đắc nhân tâm – How to win friends and Influence People của Dale Carnegie là quyển sách nổi tiếng nhất, bán chạy nhất và có tầm ảnh hưởng nhất của mọi thời đại. Tác phẩm đã được chuyển ngữ sang hầu hết các thứ tiếng trên thế giới và có mặt ở hàng trăm quốc gia.",
+            "client":"Tất cả mọi lứa tuổi",
+            "price":"52.000 VNĐ",
+            "cat":"InformationBook",
+            "link":"https://dacnhantam.vn",
+            "duongDanSeo":"Dac-nhan-tam"
+        },
+
+        {
+            "id":2,
+            "title": "Giáo khoa toán 8",
+            "bigImg":"./images/sp2/1.jpg",
+            "productImg":["./images/sp2/2.jpg","./images/sp2/3.jpg"],
+            "desc":"Bổ sung kiến thức về môn toán cho học sinh lớp 8",
+            "client":"Dành cho học sinh cấp 2, nhất là lớp 8",
+            "price":"44.000 VNĐ",
+            "cat":"LearningBook",
+            "link":"https://gktoan8.vn",
+            "duongDanSeo":"Giao-khoa-toan-8"
+        },
+        {
+            "id":3,
+            "title": "Giáo khoa toán 12",
+            "bigImg":"./images/sp3/1.jpg",
+            "productImg":["./images/sp3/2.jpg","./images/sp3/3.jpg"],
+            "desc":"Bổ sung kiến thức về môn toán cho học sinh lớp 12",
+            "client":"Dành cho học sinh cấp 3, nhất là lớp 12",
+            "price":"77.000 VNĐ",
+            "cat":"LearningBook",
+            "link":"https://gktoan12.vn",
+            "duongDanSeo":"Giao-khoa-toan-12"
+        },
+
+        {
+            "id":4,
+            "title": "Sách ngữ văn 12",
+            "bigImg":"./images/sp4/1.jpg",
+            "productImg":["./images/sp4/2.jpg","./images/sp4/3.jpg"],
+            "desc":"Bổ sung kiến thức về môn ngữ văn cho học sinh lớp 12",
+            "client":"Dành cho học sinh cấp 3, nhất là lớp 12",
+            "price":"77.000 VNĐ",
+            "cat":"LearningBook",
+            "link":"https://gkvan12.vn",
+            "duongDanSeo":"Ngu-van-12"
+        },
+
+        {
+            "id":5,
+            "title": "Từ điển Cambridge",
+            "bigImg":"./images/sp5/1.jpg",
+            "productImg":["./images/sp5/2.jpg","./images/sp5/3.jpg"],
+            "desc":"Từ điển tiếng anh 15.000 giúp cải thiện học lực ngoại ngữ",
+            "client":"Dành cho học sinh, sinh viên và người đi làm",
+            "price":"155.000 VNĐ",
+            "cat":"DictionaryBook",
+            "link":"https://tudiencambridge.vn",
+            "duongDanSeo":"Tu-dien-cambridge"
+        }
+
+    ]
+}

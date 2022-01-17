@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Trang chủ web quản lý Sách</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+	<link rel="stylesheet" href="../stylesheets/vendor.css">
+	<link rel="stylesheet" href="../stylesheets/style.css">
+
+</head>
+<body class="ish--hc1 ish--htc2">
+
+<!-- sidebar -->
+<a class="ish-sbar-overlay" href="#close"></a>
+<div class="ish-sbar">
+	<div class="ish-sbar__inner">
+		<a class="ish-sbar__logo" href="index.html">we <span>|</span> rt</a>
+
+		<div class="ish-icons-group">
+			<a class="ish-icons-group__icon ish-icon-twitter" href="https://twitter.com/ishyoboydotcom" target="_blank"></a>
+			<a class="ish-icons-group__icon ish-icon-behance" href="https://www.behance.net/mattimling" target="_blank"></a>
+			<a class="ish-icons-group__icon ish-icon-dribbble" href="https://dribbble.com/MattImling" target="_blank"></a>
+			<a class="ish-icons-group__icon ish-icon-facebook" href="https://www.facebook.com/ishyoboydotcom" target="_blank"></a>
+		</div>
+	</div>
+</div>
+<!-- sidebar end -->
+
+
+
+<div class="ish-wrapper">
+
+	<div class="ish-wrapper__inner">
+
+
+
+		<!-- header -->
+		<header class="ish-row ish-header">
+			<div class="ish-header__logo">
+				<a class="ish-header__link" href="../">Thư Viện <span>|</span> Sách</a>
+			</div>
+			<div class="ish-header__tagline" style="font-size: medium;">
+				<strong>Mở rộng</strong>
+			</div>
+		</header>
+		<!-- header end -->
+
+        <% data.forEach(function (spchitiet){ %>
+        <% if(spchitiet._id.equals(idsanpham)){ %>
+        <!-- lead -->
+        <div class="background">
+ 
+            <div class="big_image">
+                <img src="/<%= spchitiet.anhsp[0] %>" alt="wawererly design" class="cangiua">
+            </div>
+            <h1 class="ish-lead__headline" >
+				<span class="ish-lead__headline-inner" ><%= spchitiet.ten %></span>
+            </h1>
+        </div>
+        
+        <!-- lead end -->
+
+
+
+
+        <!-- content -->
+        <div class="ish-row ish-content">
+
+            <div class="ish-col-xs-12 ish-col-sm-4 ish-last-xs ish-first-sm ish-content__sidebar">
+
+                <!-- side content -->
+                <p>
+                    <%= spchitiet.des  %>
+                </p>
+
+                <ul class="ish-sidebar-mdata post-meta">
+                    <li class="ish-sidebar-mdata__item">
+                        <strong class="ish-sidebar-mdata__title post-meta-key">Khách hàng</strong>
+                        <%= spchitiet.khachhang  %>
+                    </li>
+                    <li class="ish-sidebar-mdata__item">
+                        <strong class="ish-sidebar-mdata__title post-meta-key">Giá tiền</strong>
+                        <%= spchitiet.giatien  %>
+                    </li>
+                    <li class="ish-sidebar-mdata__item">
+                        <strong class="ish-sidebar-mdata__title post-meta-key">Danh mục</strong>
+                        <%= spchitiet.danhmuc  %></a>
+                    </li>
+                    <li class="ish-sidebar-mdata__item">
+                        <strong class="ish-sidebar-mdata__title post-meta-key">Mô tả</strong>
+                        <%= spchitiet.mota  %></a>
+                    </li>
+                    <li class="ish-sidebar-mdata__item">
+                        <strong class="ish-sidebar-mdata__title post-meta-key">Vị trí</strong>
+                        <%= spchitiet.vitri  %></a>
+                    </li>
+                </ul>
+
+                <hr>
+
+                <div class="ish-sidebar-share">
+                    <strong class="ish-sidebar-share__desc">Share</strong>
+                </div>
+
+                <hr>
+
+            </div>
+            <div class="ish-col-xs-12 ish-col-sm-7 ish-col-sm-offset-1 ish-content__main">
+                <% spchitiet.anhsp.forEach(function(anh){  %>
+                <a class="ish-image ish-lightbox" href="<%= anh %>">
+                    <img class="ish-image__image" src="../<%= anh %>" alt="logotype design">
+                </a> 
+                <% }) %>
+
+            </div>
+
+        </div>
+        <!-- content end -->
+<% }}) %>
+<% include template/footer  %>
