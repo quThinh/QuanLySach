@@ -6,18 +6,18 @@
   * Cài đặt vscode
   * Cài đặt git https://git-scm.com/downloads
   * Cài đặt mongodb https://www.mongodb.com/try/download/enterprise?fbclid=IwAR3-NpwhKmBd0KIgAdGTplaP619G0pnV1JTZx-86r4Ocz_-3hkTpWHcsMyA
-    -> Sau khi cài đặt xong, vào ổ C, tạo folder data, trong folder data tạo folder mongo
-    -> Vào folder C:\Program Files\MongoDB\Server\5.0\bin và open with vscode
-    -> chuột phải, open with terminal và nhập mongod
-    -> chuột phải, open with terminal nhập các dòng lệnh sau
-       .) use account
-       .) db.createCollection('account')
-       .) db.account.insert({"username":"admin","password":"admin"})
+    Sau khi cài đặt xong, vào ổ C, tạo folder data, trong folder data tạo folder mongo
+    * Vào folder C:\Program Files\MongoDB\Server\5.0\bin và open with vscode
+    * Chuột phải, open with terminal và nhập mongod
+    * Chuột phải, open with terminal nhập các dòng lệnh sau
+       * use account
+       * db.createCollection('account')
+       * db.account.insert({"username":"admin","password":"admin"})
   * Mở vscode, terminal, new terminal và nhập dòng lệnh
-    -> git clone https://github.com/quThinh/QuanLySach.git
+    *git clone https://github.com/quThinh/QuanLySach.git
   * Sau đó open folder test vừa mới clone về
   * Chuột phải vào ./app.js và ./views/form/app.js và thực hiện 2 câu lệnh
-    -> npm install
+    *npm install
   
 # Cách sử dụng
   * Open in terminal file app.js tương ứng với trang quản lý/trang chủ và chạy câu lệnh npm start
